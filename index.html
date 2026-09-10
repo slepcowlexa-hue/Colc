@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>iPhone Calculator Mini App</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <title>iPhone Calculator</title>
   <style>
     * {
       box-sizing: border-box;
@@ -167,12 +166,6 @@
   <script>
     const display = document.getElementById('display');
     const clearBtn = document.getElementById('clear-btn');
-    const tg = window.Telegram?.WebApp;
-
-    if (tg) {
-      tg.expand();
-      tg.ready();
-    }
 
     let currentValue = '0';
     let previousValue = null;
